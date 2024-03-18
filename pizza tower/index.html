@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Carrito</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/skeleton.css">
+    <link rel="stylesheet" href="css/custom.css">
+</head>
+<body>
+<header id="header" class="header">
+    <div class="container">
+        <div class="row">
+            <div class="four columns">
+                <img src="img/logo__rustica.png" id="logo">
+            </div>
+            <div class="two columns u-pull-right">
+                <ul>
+                    <li class="submenu">
+                            <img src="img/cart.png" id="img-carrito">
+                            <div id="carrito">
+                                    
+                                    <table id="lista-carrito" class="u-full-width">
+                                        <thead>
+                                            <tr>
+                                                <th>Imagen</th>
+                                                <th>Nombre</th>
+                                                <th>Precio</th>
+                                                <th>Cantidad</th>
+                                                <th></th>
+                                            </tr>
+                                        </thead>
+                                        <tbody></tbody>
+                                    </table>
+
+                                    <a href="#" id="vaciar-carrito" class="button u-full-width">Vaciar Carrito</a>
+                            </div>
+                    </li>
+                </ul>
+            </div>
+        </div> 
+    </div>
+    </header>
+
+
+    <div id="hero">
+        <div class="container">
+            <div class="row">
+                    <div class="six columns">
+                        <div class="contenido-hero">
+                                <h2>Disfruta las mejores pizzas de Caracas</h2>
+                                <p>Todo al alcanze de un click</p>
+                                
+                        </div>
+                    </div>
+            </div> 
+        </div>
+    </div>
+
+    <div class="barra">
+        <div class="container">
+            <div class="row">
+                    <div class="four columns icono icono1">
+                        <p>Dale rienda suelta a tu imaginación.<br>
+                        creando tu propia pizza</p>
+                    </div>
+                    <div class="four columns icono icono2">
+                        <p>Llegamos a todas partes de Caracas<br>
+                            Con los mejores sabores</p>
+                    </div>
+                    <div class="four columns icono icono3">
+                        <p> Y con los mejores tiempos del mercado<br>
+                            en deliverys</p>
+                    </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div id="crear__pizza">
+        <h1 id="encabezado" class="encabezado">Arma tu pizza</h1>
+        <div class="card__pizza">
+            <div class="info-card-pizza">
+                <img src="img/crea.jpg" class="imagen-curso u-full-width">
+                <h4 id="persoPizza">Pizza Personalizada:</h4>
+                <div class="inputs">
+                    <div class="input__tamanos">
+                        <fieldset id="tamanos__pizzas">
+                            <legend >Seleccione tamaño:</legend>
+                            <div class="tamanos__pizzas">
+                                <input 
+                                type="radio" 
+                                id="pequena" 
+                                name="tamano" 
+                                value="Pequeña"/>
+                                <label id="t1" for="pequeno">Pequeña</label>
+                            </div>
+
+                            <div class="tamanos__pizzas">
+                                <input 
+                                type="radio" 
+                                id="mediana" 
+                                name="tamano" 
+                                value="Mediana" />
+                                <label id="t2" for="mediano">Mediana</label>
+                            </div>
+
+                            <div class="tamanos__pizzas">
+                                <input 
+                                type="radio" 
+                                id="grande" 
+                                name="tamano" 
+                                value="Grande" />
+                                <label id="t3" for="grande">Grande</label>
+                            </div>
+                        </fieldset>
+                    </div>
+                    <div> 
+                        <fieldset id="col__ingre">
+                            <legend class="sele__ingre" id="selecIngre">Seleccione ingredientes:</legend>
+                        <div class="input__ingre">
+                            <div>
+                                <div class="ingredientes__pizza">
+                                    <input 
+                                    type="checkbox" 
+                                    id="peperoni" 
+                                    name="ingrediente" 
+                                    value="Pepperoni"/>
+                                    <label for="pequeno">Peperoni</label>
+                                </div>
+    
+                                <div class="ingredientes__pizza">
+                                    <input 
+                                    type="checkbox" 
+                                    id="jamon" 
+                                    name="ingrediente" 
+                                    value="Jamón"/>
+                                    <label for="pequeno">Jamon</label>
+                                </div>
+    
+                                <div class="ingredientes__pizza">
+                                    <input 
+                                    type="checkbox" 
+                                    id="aceitunas" 
+                                    name="ingrediente" 
+                                    value="Aceitunas Negras"/>
+                                    <label for="pequeno">Aceitunas Negras</label>
+                                </div>
+                            </div>
+                            
+                            <div>
+                                <div class="ingredientes__pizza">
+                                    <input 
+                                    type="checkbox" 
+                                    id="maiz" 
+                                    name="ingrediente" 
+                                    value="Maíz"/>
+                                    <label for="pequeno">Maiz</label>
+                                </div>
+    
+                                <div class="ingredientes__pizza">
+                                    <input 
+                                    type="checkbox" 
+                                    id="tocineta" 
+                                    name="ingrediente" 
+                                    value="Tocineta"/>
+                                    <label for="pequeno">Tocineta</label>
+                                </div>
+    
+                                <div class="ingredientes__pizza">
+                                    <input 
+                                    type="checkbox" 
+                                    id="cebolla" 
+                                    name="ingrediente" 
+                                    value="Cebolla"/>
+                                    <label for="pequeno">Cebolla</label>
+                                </div>
+                            </div>
+                            
+                            <div>
+                                <div class="ingredientes__pizza">
+                                    <input 
+                                    type="checkbox" 
+                                    id="pimenton" 
+                                    name="ingrediente" 
+                                    value="Pimentón"/>
+                                    <label for="pequeno">Pimentón</label>
+                                </div>
+    
+                                <div class="ingredientes__pizza">
+                                    <input 
+                                    type="checkbox" 
+                                    id="queso" 
+                                    name="ingrediente" 
+                                    value="Queso"/>
+                                    <label for="pequeno">Queso</label>
+                                </div>
+    
+                                <div class="ingredientes__pizza">
+                                    <input 
+                                    type="checkbox" 
+                                    id="pesto" 
+                                    name="ingrediente" 
+                                    value="Pesto"/>
+                                    <label for="pequeno">Pesto</label>
+                                </div> <br>
+                            </div>
+                            
+                        </div>
+                        </fieldset>
+                    </div>
+                </div>
+                <p class="precio"> <span id="precio__total" class="u-pull-right ">$ 0.00</span></p>
+                <a href="#" id="pi" class="u-full-width button-primary button input agregar-carrito" data-id="0">Agregar Al Carrito</a>
+            </div>
+        </div> <!--.card-->
+
+    </div>
+    
+    <div id="lista-cursos" class="container">
+        <h1 id="encabezado" class="encabezado">Menu</h1>
+        <div class="row">
+            <div class="four columns">
+                <div class="card">
+                    <img src="img/margarita.jpg" class="imagen-curso u-full-width">
+                    <div class="info-card">
+                        <h4>Margarita</h4>
+                        <p>Tamaño: Pequeña</p>
+                        <img src="img/estrellas.png">
+                        <p class="precio"><span id="s01" class="u-pull-right ">$15</span></p>
+                        <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="1">Agregar Al Carrito</a>
+                    </div>
+                </div> <!--.card-->
+            </div>
+            <div class="four columns">
+                    <div class="card">
+                        <img src="img/margarita.jpg" class="imagen-curso u-full-width">
+                        <div class="info-card">
+                            <h4>Margarita</h4>
+                            <p>Tamaño: Mediana</p>
+                            <img src="img/estrellas.png">
+                            <p class="precio"><span id="s02" class="u-pull-right ">$15</span></p>
+                            <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="2">Agregar Al Carrito</a>
+                        </div>
+                    </div>
+            </div>
+            <div class="four columns">
+                    <div class="card">
+                        <img src="img/margarita.jpg" class="imagen-curso u-full-width">
+                        <div class="info-card">
+                            <h4>Margarita</h4>
+                            <p>Tamaño: Grande</p>
+                            <img src="img/estrellas.png">
+                            <p class="precio"><span id="s03" class="u-pull-right ">$15</span></p>
+                            <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="3">Agregar Al Carrito</a>
+                        </div>
+                    </div> <!--.card-->
+            </div>
+
+        </div> <!--.row-->
+        <div class="row">
+            <div class="four columns">
+                <div class="card">
+                    <img src="img/peperroni.jpg" class="imagen-curso u-full-width">
+                    <div class="info-card">
+                        <h4>Pepperoni</h4>
+                        <p>Tamaño: Pequeña</p>
+                        <img src="img/estrellas.png">
+                        <p class="precio"> <span id="s04" class="u-pull-right ">$15</span></p>
+                        <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="4">Agregar Al Carrito</a>
+                    </div>
+                </div> <!--.card-->
+            </div>
+            <div class="four columns">
+                    <div class="card">
+                        <img src="img/peperroni.jpg" class="imagen-curso u-full-width">
+                        <div class="info-card">
+                            <h4>Pepperoni</h4>
+                            <p>Tamaño: Mediana</p>
+                            <img src="img/estrellas.png">
+                            <p class="precio"> <span id="s05" class="u-pull-right ">$15</span></p>
+                            <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="5">Agregar Al Carrito</a>
+                        </div>
+                    </div> <!--.card-->
+            </div>
+            <div class="four columns">
+                    <div class="card">
+                        <img src="img/peperroni.jpg" class="imagen-curso u-full-width">
+                        <div class="info-card">
+                            <h4>Pepperoni</h4>
+                            <p>Tamaño: Grande</p>
+                            <img src="img/estrellas.png">
+                            <p class="precio"> <span id="s06" class="u-pull-right ">$15</span></p>
+                            <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="6">Agregar Al Carrito</a>
+                        </div>
+                    </div> <!--.card-->
+            </div>
+        </div>
+        
+        
+        <div class="row">
+            <div class="four columns">
+                <div class="card">
+                    <img src="img/jamon.jpg" class="imagen-curso u-full-width">
+                    <div class="info-card">
+                        <h4>Jamón</h4>
+                        <p>Tamaño: Pequeña</p>
+                        <img src="img/estrellas.png">
+                        <p class="precio"> <span id="s07" class="u-pull-right ">$15</span></p>
+                        <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="7">Agregar Al Carrito</a>
+                    </div>
+                </div> <!--.card-->
+            </div>
+            <div class="four columns">
+                    <div class="card">
+                        <img src="img/jamon.jpg" class="imagen-curso u-full-width">
+                        <div class="info-card">
+                            <h4>Jamón</h4>
+                            <p>Tamaño: Mediana</p>
+                            <img src="img/estrellas.png">
+                            <p class="precio"> <span id="s08" class="u-pull-right ">$15</span></p>
+                            <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="8">Agregar Al Carrito</a>
+                        </div>
+                    </div> <!--.card-->
+            </div>
+            <div class="four columns">
+                    <div class="card">
+                        <img src="img/jamon.jpg" class="imagen-curso u-full-width">
+                        <div class="info-card">
+                            <h4>Jamón</h4>
+                            <p>Tamaño: Grande</p>
+                            <img src="img/estrellas.png">
+                            <p class="precio"><span id="s09" class="u-pull-right ">$15</span></p>
+                            <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="9">Agregar Al Carrito</a>
+                        </div>
+                    </div> <!--.card-->
+            </div>
+        </div> <!--.row-->
+        
+        <div class="row">
+            <div class="four columns">
+                <div class="card">
+                    <img src="img/tocineta.jpg" class="imagen-curso u-full-width">
+                    <div class="info-card">
+                        <h4>Tocineta</h4>
+                        <p>Tamaño: Pequeña</p>
+                        <img src="img/estrellas.png">
+                        <p class="precio"><span id="s10" class="u-pull-right ">$15</span></p>
+                        <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="10">Agregar Al Carrito</a>
+                    </div>
+                </div> <!--.card-->
+            </div>
+            <div class="four columns">
+                    <div class="card">
+                        <img src="img/tocineta.jpg" class="imagen-curso u-full-width">
+                        <div class="info-card">
+                            <h4>Tocineta</h4>
+                            <p>Tamaño: Mediana</p>
+                            <img src="img/estrellas.png">
+                            <p class="precio"><span id="s11" class="u-pull-right ">$15</span></p>
+                            <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="11">Agregar Al Carrito</a>
+                        </div>
+                    </div> <!--.card-->
+            </div>
+            <div class="four columns">
+                    <div class="card">
+                        <img src="img/tocineta.jpg" class="imagen-curso u-full-width">
+                        <div class="info-card">
+                            <h4>Tocineta</h4>
+                            <p>Tamaño: Grande</p>
+                            <img src="img/estrellas.png">
+                            <p class="precio"> <span id="s12" class="u-pull-right ">$15</span></p>
+                            <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="12">Agregar Al Carrito</a>
+                        </div>
+                    </div> <!--.card-->
+            </div>
+        </div> <!--.row-->
+        
+        <div class="row">
+                <div class="four columns">
+                    <div class="card">
+                        <img src="img/vege.jpg" class="imagen-curso u-full-width">
+                        <div class="info-card">
+                            <h4>Vegetariana</h4>
+                            <p>Tamaño: Pequeña</p>
+                            <img src="img/estrellas.png">
+                            <p class="precio"><span id="s13" class="u-pull-right ">$15</span></p>
+                            <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="13">Agregar Al Carrito</a>
+                        </div>
+                    </div> <!--.card-->
+                </div>
+                <div class="four columns">
+                        <div class="card">
+                            <img src="img/vege.jpg" class="imagen-curso u-full-width">
+                            <div class="info-card">
+                                <h4>Vegetariana</h4>
+                                <p>Tamaño: Mediana</p>
+                                <img src="img/estrellas.png">
+                                <p class="precio"><span id="s14" class="u-pull-right ">$15</span></p>
+                                <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="14">Agregar Al Carrito</a>
+                            </div>
+                        </div> <!--.card-->
+                </div>
+                <div class="four columns">
+                        <div class="card">
+                            <img src="img/vege.jpg" class="imagen-curso u-full-width">
+                            <div class="info-card">
+                                <h4>Vegetariana</h4>
+                                <p>Tamaño: Grande</p>
+                                <img src="img/estrellas.png">
+                                <p class="precio"><span id="s15" class="u-pull-right ">$15</span></p>
+                                <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="15">Agregar Al Carrito</a>
+                            </div>
+                        </div> <!--.card-->
+                </div>
+            </div> <!--.row-->
+    </div>  
+
+    <footer id="footer" class="footer">
+        <div class="container">
+            <div class="row">
+                    <div class="four columns">
+                            <nav id="principal" class="menu">
+                                <a class="enlace" href="#">Para tu Negocio</a>
+                                <a class="enlace" href="#">Aplicaciones Móviles</a>
+                                <a class="enlace" href="#">Soporte</a>
+                                <a class="enlace" href="#">Temas</a>
+                            </nav>
+                    </div>
+                    <div class="four columns">
+                            <nav id="secundaria" class="menu">
+                                <a class="enlace" href="#">¿Quienes Somos?</a>
+                                <a class="enlace" href="#">Empleo</a>
+                                <a class="enlace" href="#">Blog</a>
+                            </nav>
+                    </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/carrito.js"></script>
+    <script src="js/crearPizza.js"></script>
+
+</body>
+</html>
